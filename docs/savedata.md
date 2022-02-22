@@ -1,10 +1,12 @@
 # SaveData
 
-The Celeste savefile is written and parsed in the [XML 1.0](https://www.w3.org/TR/xml/) file format. All relevant elements are children under the `SaveData` parent element. The `SaveData` element declares two XML namespaces:
+The Celeste savefile is written and parsed in the XML 1.0[**](https://www.w3.org/TR/xml/) file format. All relevant elements are children under the `SaveData` parent element. The `SaveData` element declares two XML namespaces:
 
 ```xml
 <SaveData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
 ```
+
+The following documentation covers all child elements of the `SaveData` element.
 
 #### Version
 
@@ -25,7 +27,7 @@ Name of the savefile in Celeste. Defaults to `Madeline`. Is a `string` value.
 
 ### Time
 
-Total duration of time spent playing Celeste. Measured in 100 nanosecond intervals since January 1, 1601 (UTC) as per the [Win32 FileTime](https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime) specification. See [Topic :: FileTime](/topics/filetime.md) for more details. Is an `integer` value.
+Total duration of time spent playing Celeste. Measured in 100 nanosecond intervals since January 1, 1601 (UTC) as per the Win32 FileTime[**](https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime) specification. See the [FileTime](/docs/topics/filetime.md) topic for more details. Is an `integer` value. This number is recorded with uneccessary precision.
 
 ```xml
 <Time>8650037750000</Time>
@@ -35,7 +37,7 @@ Total duration of time spent playing Celeste. Measured in 100 nanosecond interva
 
 ### LastSave
 
-UTC timestamp representing the last time the game wrote new data to the savefile. Is a `string` value.
+UTC timestamp representing the last time the game has written new data to the savefile. Is a `string` value.
 
 ```xml
 <LastSave>0001-01-01T00:00:00</LastSave>
@@ -64,4 +66,3 @@ Whether [Variant Mode](https://celestegame.fandom.com/wiki/Variant_Mode) is enab
 ```xml
 <VariantMode>true</VariantMode>
 ```
-

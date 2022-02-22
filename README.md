@@ -12,7 +12,7 @@
         + `0` for the first save, `1` for the second, etc.
         + Celeste will display extra savefiles, provided they are numbered correctly.
     + The numbered savefile might not exist if the save save has not been created in-game. (or it could be empty)
-+ Savefiles are read, written, and parsed as [XML 1.0](https://www.w3.org/TR/xml/) files
++ Savefiles are read, written, and parsed as XML 1.0[**](https://www.w3.org/TR/xml/) files
 + Savefiles can be edited manually to alter game behavior, stats, unlocks, etc.
 + Celeste does not run save file validations (as far as I have tested), so invalid values will either be ignored or cause abnormal game behavior.
     + *i.e* setting `TotalStrawberries` to an integer that is not the sum of each chapter's collected strawberries
