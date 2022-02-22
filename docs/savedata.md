@@ -25,7 +25,7 @@ Name of the savefile in Celeste. Defaults to `Madeline`. Is a `string` value.
 
 ### Time
 
-Total duration of time spent playing Celeste. Measured in 100 nanosecond intervals since January 1, 1601 (UTC) as per the [Win32 FileTime](https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime) specification. See [Topic :: FileTime]() for more details. Is an `integer` value.
+Total duration of time spent playing Celeste. Measured in 100 nanosecond intervals since January 1, 1601 (UTC) as per the [Win32 FileTime](https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime) specification. See [Topic :: FileTime](/topics/filetime.md) for more details. Is an `integer` value.
 
 ```xml
 <Time>8650037750000</Time>
@@ -51,7 +51,7 @@ Whether [Cheat Mode](https://celestegame.fandom.com/wiki/Cheat_Mode) is enabled 
 
 ### AssistMode
 
-Whether Assist Mode is enabled on the savefile. Is a `boolean` value. Can be `0`, `1`, `true`, or `false`. Uses [Assists](#Assists) to determine what assists are enabled or disabled.
+Whether [Assist Mode](https://celestegame.fandom.com/wiki/Variant_Mode#Assists) is enabled on the savefile. Is a `boolean` value. Can be `0`, `1`, `true`, or `false`. Uses [Assists](#Assists) to determine what assists are enabled or disabled.
 
 ```xml
 <AssistMode>true</AssistMode>
@@ -59,7 +59,7 @@ Whether Assist Mode is enabled on the savefile. Is a `boolean` value. Can be `0`
 
 ### VariantMode
 
-Whether [Variant Mode]() is enabled on the savefile. Is a `boolean` value. Can be `0`, `1`, `true`, or `false`. Uses [Assists](#Assists) to determine what assists are enabled or disabled.
+Whether [Variant Mode](https://celestegame.fandom.com/wiki/Variant_Mode) is enabled on the savefile. Is a `boolean` value. Can be `0`, `1`, `true`, or `false`. Uses [Assists](#Assists) to determine what assists are enabled or disabled.
 
 ```xml
 <VariantMode>true</VariantMode>
