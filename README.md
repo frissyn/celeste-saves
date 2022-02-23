@@ -11,7 +11,7 @@
         + Starting at `0`, each file represents a save in the displayed order
         + `0` for the first save, `1` for the second, etc.
         + Celeste will display extra savefiles, provided they are numbered correctly.
-    + The numbered savefile might not exist if the save save has not been created in-game. (or it could be empty)
+    + The numbered savefile might not exist if the save has not been created in-game. (or it could be empty)
 + Savefiles are read, written, and parsed as XML 1.0[**](https://www.w3.org/TR/xml/) files
 + Savefiles can be edited manually to alter game behavior, stats, unlocks, etc.
 + Celeste does not run save file validations (as far as I have tested), so invalid values will either be ignored or cause abnormal game behavior.
@@ -20,14 +20,14 @@
 
 ### Documentation Tree
 
-+ [SaveData](/docs/savedata.md)
-    - [Version](/docs/savedata.md#Version)
-    - [Name](/docs/savedata.md#Name)
-    - [Time](/docs/savedata.md#Time)
-    - [LastSave](/docs/savedata.md#LastSave)
-    - [CheatMode](/docs/savedata.md#CheatMode)
-    - [VariantMode](/docs/savedata.md#VariantMode)
-    - [Assists](/docs/savedata.md#Assists)
++ [SaveData](/docs/savedata.md#SaveData)
+    + [Version](/docs/savedata.md#Version)
+    + [Name](/docs/savedata.md#Name)
+    + [Time](/docs/savedata.md#Time)
+    + [LastSave](/docs/savedata.md#LastSave)
+    + [CheatMode](/docs/savedata.md#CheatMode)
+    + [VariantMode](/docs/savedata.md#VariantMode)
+    + [Assists](/docs/savedata.md#Assists)
         + [GameSpeed](/docs/savedata.md#Assists)
         + [Invincible](/docs/savedata.md#Assists)
         + [DashMode](/docs/savedata.md#Assists)
@@ -40,27 +40,33 @@
         + [SuperDashing](/docs/savedata.md#Assists)
         + [Hiccups](/docs/savedata.md#Assists)
         + [PlayAsBadeline](/docs/savedata.md#Assists)
-    - [TheoSisterName](/docs/savedata.md#TheoSisterName)
-    - [UnlockedAreas](/docs/savedata.md#UnlockedAreas)
-    - [TotalDeaths](/docs/savedata.md#TotalDeaths)
-    - [TotalStrawberries](/docs/savedata.md#TotalStrawberries)
-    - [TotalGoldenStrawberries](/docs/savedata.md#TotalGoldenStrawberries)
-    - [TotalJumps](/docs/savedata.md#TotalJumps)
-    - [TotalWallJumps](/docs/savedata.md#TotalWallJumps)
-    - [TotalDashes](/docs/savedata.md#TotalDashes)
-    - [Flags](/docs/savedata.md#Flags)
-    - [Poem](/docs/savedata.md#Poem)
-    - [SummitGems](/docs/savedata.md#SummitGems)
-    - [LastArea](/docs/savedata.md#LastArea)
-    - [Area](/docs/savedata.md#Area)
+    + [TheoSisterName](/docs/savedata.md#TheoSisterName)
+    + [UnlockedAreas](/docs/savedata.md#UnlockedAreas)
+    + [TotalDeaths](/docs/savedata.md#TotalDeaths)
+    + [TotalStrawberries](/docs/savedata.md#TotalStrawberries)
+    + [TotalGoldenStrawberries](/docs/savedata.md#TotalGoldenStrawberries)
+    + [TotalJumps](/docs/savedata.md#TotalJumps)
+    + [TotalWallJumps](/docs/savedata.md#TotalWallJumps)
+    + [TotalDashes](/docs/savedata.md#TotalDashes)
+    + [Flags](/docs/savedata.md#Flags)
+    + [Poem](/docs/savedata.md#Poem)
+    + [SummitGems](/docs/savedata.md#SummitGems)
+    + [LastArea](/docs/savedata.md#LastArea)
+    + [Area](/docs/savedata.md#Area)
         + [AreaStats](/docs/savedata.md#AreaStats)
-            - [Modes](/docs/savedata.md#Modes)
+            + [Modes](/docs/savedata.md#Modes)
                 + [AreaModeStats](/docs/savedata.md#AreaModeStats)
-                    - [Checkpoints](/docs/savedata.md#Checkpoints)
-                    - [Strawberries](/docs/savedata.md#Strawberries)
-                        + [EntityID](/docs/savedata.md#Version)
+                    + [Checkpoints](/docs/savedata.md#Checkpoints)
+                    + [Strawberries](/docs/savedata.md#Strawberries)
+                        + [EntityID](/docs/savedata.md#EntityID)
 
 
 ### Credits
 
-Coming soon.
++ [**frissyn**](https://github.com/frissyn) - project lead
+
++ [**Aurora**](https://github.com/AuroraKy) - contributed to the [FileTime](/docs/topics/filetime.md) Topic
+
++ **Mnstrman06** - contributed to the [FileTime](/docs/topics/filetime.md) and [Poem](/docs/topics/poem.md) Topics
+
++ **Hydro0** - donated her \[100% / 202\] Strawberries savefile for research
