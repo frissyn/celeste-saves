@@ -14,7 +14,7 @@ This value:
 
 translates to 24 hours of playtime, and Celeste would display `24:00:00.0000` on the savefile associated with that time.
 
-So, interpreting this value in other languages (besides C, C++, and C# which have native implementations of `FileTime` on Windows), can be done by dividing the value by 10,000 and reading that into a naïve datetime in your language of choice. (Or a time delta, which is more convinent in this context.)
+So, interpreting this value in other languages (besides C, C++, and C# which have native implementations of `FileTime` on Windows), can be done by dividing the value by 10,000 and reading that into a naïve datetime in your language of choice as milliseconds. (Or a time delta, which is more convinent in this context.)
 
 **Python:**
 ```python
@@ -23,7 +23,6 @@ So, interpreting this value in other languages (besides C, C++, and C# which hav
 >>> delta = dt.timedelta(milliseconds=units // 10000)
 >>> delta.days
 1
->>> 
 ```
 
 **Ruby:**
@@ -32,4 +31,5 @@ irb(main):001:0> require 'time'
 irb(main):002:0> units = 864000000000
 irb(main):003:0> time = Time.at units / 10000 / 1000
 irb(main):004:0> time.to_i / 86400
+=> 1
 ```
