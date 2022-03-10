@@ -2,6 +2,11 @@
 
 📼 Research repository for documenting Celeste savefiles. The documentation will extensively cover all the savefile nodes and paths. Currently a work in progress, don't mind what's missing.
 
+**Related Projects:**
+
++ [frissyn/berrydeck](https://github.com/frissyn/berrydeck)
++ [frissyn/celeste.rb](https://github.com/frissyn/celeste.rb)
+
 ### Preliminary Information
 
 + Celeste savefiles are located at `Celeste/Saves/`
