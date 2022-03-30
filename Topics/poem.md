@@ -38,4 +38,4 @@ Which means they have both Chapter 1 and Chapter 3's Crystal Heart.
 | mcr          | 8B - Core             | Say Goodbye           |
 | fw? ll?      | 9 - Farewell          | Empty Space           |
 
-**Note:** While Chapter 9 is assumed to be either `fw` (Farewell) or `ll` (LostLevels), it does not appear in the `Poem` upon completion.
+{% hint style="info" %} While Chapter 9 is assumed to be either `fw` (Farewell) or `ll` (LostLevels), it does not appear in the `Poem` upon collection, most likely because this heart is fake and shatters during the in-game cutscene. {% endhint %}

@@ -2,5 +2,6 @@
 node_modules/
 package-lock.json
 package.json
-replit.nix
-.replit
+*replit*
+Gemfile.lock
+*_abc.md
