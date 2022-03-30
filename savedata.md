@@ -1,6 +1,6 @@
 # SaveData
 
-The Celeste savefile is written and parsed in the XML 1.0[**](https://www.w3.org/TR/xml/) file format. All relevant elements are children under the `SaveData` parent element. The `SaveData` element declares two XML namespaces:
+The Celeste savefile is written and parsed in the XML 1.0[\*\*](https://www.w3.org/TR/xml/) file format. All relevant elements are children under the `SaveData` parent element. The `SaveData` element declares two XML namespaces:
 
 ```xml
 <SaveData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
@@ -30,7 +30,7 @@ The following documentation covers all child elements of the `SaveData` element.
 
 ### AssistMode
 
-Whether [Assist Mode](https://celestegame.fandom.com/wiki/Variant_Mode#Assists) is enabled on the savefile. Is a `boolean` value. Uses [Assists](#Assists) to determine what assists are enabled or disabled.
+Whether [Assist Mode](https://celestegame.fandom.com/wiki/Variant\_Mode#Assists) is enabled on the savefile. Is a `boolean` value. Uses [Assists](savedata.md#Assists) to determine what assists are enabled or disabled.
 
 ```xml
 <AssistMode>true</AssistMode>
@@ -40,20 +40,19 @@ Whether [Assist Mode](https://celestegame.fandom.com/wiki/Variant_Mode#Assists) 
 
 List of child elements that determine what variants and assist mechanics are enabled or disabled. Each child element is a `boolean` value, with the exception of `GameSpeed` (`integer`), and `DashMode` (`string`).
 
-+ GameSpeed: *How fast the game moves. Valid range of integers is unkown.*
-+ Invincible: *Enable or disable player invincibility.*
-+ DashMode: *What dash mode the player uses. Is a `string` value, defaults to `Normal`. Valid values are for `2` and `Infinite` are currently unknown.*
-+ DashAssist: *Enable or disable dash assist.*
-+ InfiniteStamina: *Give the player infinite stamina.*
-+ MirrorMode: *Enable or disable enable mirror mode.*
-+ ThreeSixtyDashing: *Enable or disable enable 360° dashing.*
-+ InvisibleMotion: *Hide the player's sprite in-game.*
-+ NoGrabbing: *Enable or disable the ability to grab walls.*
-+ LowFriction: *Make the floor and walls slippery.*
-+ SuperDashing: *Enable or disable super dashing.*
-+ Hiccups: *Enable or disable player hiccups.*
-+ PlayAsBadeline: *Change the player's sprite to Badeline.*
-
+* GameSpeed: _How fast the game moves. Valid range of integers is unkown._
+* Invincible: _Enable or disable player invincibility._
+* DashMode: _What dash mode the player uses. Is a `string` value, defaults to `Normal`. Valid values are for `2` and `Infinite` are currently unknown._
+* DashAssist: _Enable or disable dash assist._
+* InfiniteStamina: _Give the player infinite stamina._
+* MirrorMode: _Enable or disable enable mirror mode._
+* ThreeSixtyDashing: _Enable or disable enable 360° dashing._
+* InvisibleMotion: _Hide the player's sprite in-game._
+* NoGrabbing: _Enable or disable the ability to grab walls._
+* LowFriction: _Make the floor and walls slippery._
+* SuperDashing: _Enable or disable super dashing._
+* Hiccups: _Enable or disable player hiccups._
+* PlayAsBadeline: _Change the player's sprite to Badeline._
 
 ```xml
 <Assists>
@@ -75,7 +74,7 @@ List of child elements that determine what variants and assist mechanics are ena
 
 ### CheatMode
 
-Whether [Cheat Mode](https://celestegame.fandom.com/wiki/Cheat_Mode) is enabled on the savefile. Is a `boolean` value.
+Whether [Cheat Mode](https://celestegame.fandom.com/wiki/Cheat\_Mode) is enabled on the savefile. Is a `boolean` value.
 
 ```xml
 <CheatMode>true</CheatMode>
@@ -103,9 +102,8 @@ Whether [Cheat Mode](https://celestegame.fandom.com/wiki/Cheat_Mode) is enabled 
 
 ### EntityID
 
-Denotes a collectible of some kind (berries, keys, etc.), usually stored as a list of child elements under a parent element.
-Has one attribute, `KEY`. See the [Entities](/docs/topics/entity.md) Topic for more detailed info.
- 
+Denotes a collectible of some kind (berries, keys, etc.), usually stored as a list of child elements under a parent element. Has one attribute, `KEY`. See the [Entities](broken-reference) Topic for more detailed info.
+
 ```xml
 <EntityID Key="end:4"/>
 ```
@@ -178,7 +176,7 @@ UTC timestamp representing the last time the game has written new data to the sa
 
 ### Poem
 
-List of string elements that contain Chapter name abbreviations, denoting which Crystal Hearts have been unlocked. See the [Poem](/docs/topics/peom.md) Topic for more details.
+List of string elements that contain Chapter name abbreviations, denoting which Crystal Hearts have been unlocked. See the [Poem](docs/topics/peom.md) Topic for more details.
 
 ```xml
 <Poem>
@@ -204,7 +202,7 @@ Whether or not the Chapter 9 (Farewell) has been revealed to the player on the C
 
 ### Strawberries
 
-List of child [EntityID](/docs/savedata.md#EntityID)s denoting strawberry collectibles. Normally found in [AreaModeStats](/docs/savedata.md#AreaModeStats) to save which strawberries have been collected and in what order.
+List of child [EntityID](savedata.md#EntityID)s denoting strawberry collectibles. Normally found in [AreaModeStats](savedata.md#AreaModeStats) to save which strawberries have been collected and in what order.
 
 ```xml
 <Strawberries>
@@ -240,7 +238,7 @@ The name of Theo's sister. Affects his dialouge in Chapter 6 (A-Side). Is a `str
 
 ### Time
 
-Total duration of time spent playing Celeste. Measured in 100 nanosecond intervals since January 1, 1601 (UTC) as per the Win32 FileTime[**](https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime) specification. See the [FileTime](/docs/topics/filetime.md) Topic for more details. Is an `integer` value. This number is recorded with uneccessary precision.
+Total duration of time spent playing Celeste. Measured in 100 nanosecond intervals since January 1, 1601 (UTC) as per the Win32 FileTime[\*\*](https://docs.microsoft.com/en-us/windows/win32/api/minwinbase/ns-minwinbase-filetime) specification. See the [FileTime](broken-reference) Topic for more details. Is an `integer` value. This number is recorded with uneccessary precision.
 
 ```xml
 <Time>8650037750000</Time>
@@ -312,7 +310,7 @@ Number of area (chapters) that the player has unlocked. Is an `integer` value. D
 
 ### VariantMode
 
-Whether [Variant Mode](https://celestegame.fandom.com/wiki/Variant_Mode) is enabled on the savefile. Is a `boolean` value. Uses [Assists](#Assists) to determine what variants are enabled or disabled.
+Whether [Variant Mode](https://celestegame.fandom.com/wiki/Variant\_Mode) is enabled on the savefile. Is a `boolean` value. Uses [Assists](savedata.md#Assists) to determine what variants are enabled or disabled.
 
 ```xml
 <VariantMode>true</VariantMode>
@@ -328,7 +326,7 @@ Name of the savefile in Celeste. Defaults to `Madeline`. Is a `string` value.
 
 #### SaveData
 
-The Celeste savefile is written and parsed in the XML 1.0[**](https://www.w3.org/TR/xml/) file format. All relevant elements are children under the `SaveData` parent element. The `SaveData` element declares two XML namespaces:
+The Celeste savefile is written and parsed in the XML 1.0[\*\*](https://www.w3.org/TR/xml/) file format. All relevant elements are children under the `SaveData` parent element. The `SaveData` element declares two XML namespaces:
 
 ```xml
 <SaveData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
